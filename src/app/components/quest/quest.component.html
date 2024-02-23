@@ -1,0 +1,14 @@
+<div class="alert alert-dark quest-container bump-effect" [ngClass]="{'completed': quest.checked, 'bump-effect': quest.checked}">
+    <img class="quest-icon" src="assets/side_quest.png" alt="">
+    <div class="quest-data">
+        <div>
+            <span style="font-weight: bold;">{{ quest.name }}</span><span style="font-style: italic;">  Nv.{{ quest.level }}</span>
+        </div>
+        <div style="font-style: italic; color:gray">
+            {{ quest.journalSection }} > {{ quest.journalCategory }} > {{ quest.journalGenre }}
+        </div>
+    </div>
+    <div class="checkbox-container">
+        <input class="form-check-input" [checked]="quest.checked" (change)="quest.checked = !quest.checked" type="checkbox" name="quest-valid" id="quest-valid">
+    </div>
+</div>
