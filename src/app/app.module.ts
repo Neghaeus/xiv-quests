@@ -8,6 +8,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { QuestComponent } from './components/quest/quest.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
+import { JournalComponent } from './components/journal/journal.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     HeaderComponent,
     MainComponent,
     QuestComponent,
-    FilterPipe
+    FilterPipe,
+    JournalComponent
   ],
   imports: [
     BrowserModule,

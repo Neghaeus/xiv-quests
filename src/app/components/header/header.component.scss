@@ -3,3 +3,9 @@
     border-color: #7289DA; /* Couleur de la bordure du bouton */
     color: #FFFFFF; /* Couleur du texte du bouton (blanc dans cet exemple) */
 }
+
+.main-logo {
+    --logo-size: 55px;
+    width: var(--logo-size);
+    height: var(--logo-size);
+}

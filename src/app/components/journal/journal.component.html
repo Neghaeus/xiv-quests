@@ -1,0 +1,8 @@
+<div class="container">
+    @for(item of journalItems; track $index;) {
+        <div class="journal-item" (click)="onSelectItem(item)">
+            <img [src]="item.img" alt="">
+            <p class="journal-item-title">{{ item.title }}</p>
+        </div>
+    }
+</div>
