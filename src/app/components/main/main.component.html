@@ -1,11 +1,5 @@
-<div class="container">
-    <div class="input-group search-box">
-        <input class="form-control" type="text" [(ngModel)]="filteredQuests" placeholder="Rechercher une quête..." aria-label="Search">
-    </div>
-
-    <div class="row">
-        @for(quest of questsList | filter:filteredQuests:'name' ; track $index) {
-            <app-quest [quest]="quest"></app-quest>
-        }
-    </div>
-</div>
+<input class="form-control search-box" type="text" [(ngModel)]="filteredQuests" placeholder="Rechercher une quête..." aria-label="Search">
+<p>Displaying category : {{ cat }}</p>
+<!-- @for(quest of questsList | filter:filteredQuests:'name' ; track $index) {
+    <app-quest [quest]="quest"></app-quest>
+} -->
